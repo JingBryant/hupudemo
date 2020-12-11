@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+
+		* {
+			padding: 0;
+			margin: 30
+		}
+
+		body {
+			font: 14px/24px "宋体";
+			color: #000
+		}
+
+		h2 {
+			font: normal 22px/35px "黑体";
+			color: #000;
+			text-align: center;
+		}
+
+		.one {
+			font-size: 12px;
+			text-align: center
+		}
+
+		.blue {
+			color: #00C
+		}
+
+		.gray {
+			color: #666
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<img src="img/logo.png">
+		</header>
+
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="context">
+					<h2><b>国安集训地距“新发地”5公里，今日做核酸检测，全队训练暂停</b></h2>
+					<p class="one gray">北青体育&nbsp;&nbsp;&nbsp;&nbsp;<em>2020-06-15
+						</em></p>
+					<hr />
+					<p>由于最近几天北京疫情的持续发作，确诊病例的一再增多，新发地市场所处的丰台花乡地区已经被列为高风险区域，而由于此前北京中赫国安队新入驻的高鑫基地距此不远，因此有消息称，国安方面已经确定将会离开这里另寻他处，而队员也将进行核酸检测以保证身体健康。</p>
+					<p>据北青报记者了解，目前基地和国安确实都已经安排所有工作人员进行检测，不过到底离不离开高鑫基地，目前还没有一个明确的说法。</p>
+					<img src="img/news51.jpg" width="100%" height="300" align="middle" />
+					<p>从上周四确诊近期第一个本地病例开始，新发地市场的名字就开始见诸新闻媒体，而目前的调查结果显示，新增的确诊病例或多或少都和这个市场有着某种联系，这也就让与之直线距离不到5公里的高鑫基地成功大家关注的焦点，毕竟那里驻扎着国安一线队，而如果真的存在风险，是否继续在那里训练，以及现在队员们应该如何应对都是需要作出决断的。</p>
+					<p>目前记者了解到的情况是，为了最大程度上保证队员们的安全，国安全队已经在上周六就作出决定，包括队员、工作人员以及俱乐部员工在内的所有人员都将在今天（15日）进行统一的核酸检测，而在结果出来之前，球队的训练也将暂停，也就是说，今明两天，球队将会暂时做调整，等待结果出来之后，再安排后续事宜。</p>
+					<p>至于外界关心的是否还会在高鑫基地训练，以及基地方面现在是何种状态的话题，记者也做了了解。目前基地方面也在严格按照丰台区以及北京市相关方面的要求进行全面的消杀和清洁工作，毕竟那里距离新发地市场距离较近，存在一定的风险，而基地内的所有人员也将统一进行核酸检测。至于国安是否继续入驻基地的问题，目前还没有最终的定论，一切要以核酸检测结果为准，然后再等待相关部门的检查和回复。</p>
+					<p>对于国安来说，能在北京找到这样一块整个条件和配套设施相对完备的基地其实并不容易，因为不到万不得已，应该不会选择离开，但目前疫情的变化让一切都变得扑朔迷离，所以说这已经不是国安和高鑫基地方面能决定的了的事情了。简而言之就是，先等检查结果出炉，再看后续安排。</p>
+					<p>文/北京青年报记者张昆龙​​​​</p>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>

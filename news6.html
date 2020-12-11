@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+
+		* {
+			padding: 0;
+			margin: 30
+		}
+
+		body {
+			font: 14px/24px "宋体";
+			color: #000
+		}
+
+		h2 {
+			font: normal 22px/35px "黑体";
+			color: #000;
+			text-align: center;
+		}
+
+		.one {
+			font-size: 12px;
+			text-align: center
+		}
+
+		.blue {
+			color: #00C
+		}
+
+		.gray {
+			color: #666
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<img src="img/logo.png">
+		</header>
+
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="context">
+					<h2><b>两大功勋齐离队！欧洲又一豪门重建，队长＋射手王一起走或联手武磊</b></h2>
+					<p class="one gray">懂英超&nbsp;&nbsp;&nbsp;&nbsp;<em>2020-06-14</em></p>
+					<hr />
+					<p>就在欧洲各大联赛相继重启时，已经宣布取消赛季的法甲却突然弄出了大新闻，成功卫冕联赛冠军的大巴黎确认，队中的两名功勋老将卡瓦尼和蒂亚戈-席尔瓦将在今夏离队。</p>
+					<img src="img/news62.jpg" width="100%" height="300" align="middle" />
+					<p>俱乐部体育总监莱昂纳多透露：“我们计划将卡瓦尼和蒂亚戈-席尔瓦留至8月底，他们会和我们战到最后。”原本两人的合同都将在今夏6月30日结束，虽然法甲赛季已经取消，但随后欧冠联赛将会重启，所以目前球队与他们谈好了条件，留到8月份踢完所有的欧冠赛事，他们就将彻底告别。</p>
+					<img src="img/news61.jpg" width="100%" height="300" align="middle" />
+					<p>两名南美球星分别在巴黎效力了7个赛季与8个赛季，一直都是球队的绝对核心。但目前卡瓦尼已经34岁，而席尔瓦更是35岁，年龄问题成为他们离开的最大因素。作为队史第一射手王的卡瓦尼，目前已经为球队打进了200球，虽然年纪渐大但依旧不缺下家，目前国米与马竞都在与他进行谈判。最近巴黎也为卡瓦尼找好了替身，从国米以5800万欧引进意甲金靴伊卡尔迪。
+					</p>
+					<img src="img/news63.jpg" width="100%" height="300" align="middle" />
+					<p>至于老队长席尔瓦，此前他曾透露自己将继续留在欧洲效力，并拒绝了巴甲球队的邀请。巴西球星的下一站极可能是加盟英超，据悉昔日恩师安切洛蒂希望将蒂亚戈-席尔瓦带到埃弗顿，他相信弟媳的冠军经验会给球队带来好处，另外英超的中资球队狼队同样对席尔瓦感兴趣，鉴于目前狼队也同时在与武磊传绯闻，不知道两者会不会在英超成为队友。</p>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>

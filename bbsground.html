@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+
+		.choose {
+			height: 1.875rem;
+			margin-top: 0.9375rem;
+			line-height: 1.875rem;
+			font-weight: bold;
+			font-size: 1.5625rem;
+		}
+		.time {
+			font-size: 0.75rem;
+			color: #bbb;
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<img src="img/logo.png">
+			<!-- <a class="mui-icon mui-icon-search"></a>
+			<input type="text"  placeholder="虎扑直播" class="mui-icon mui-icon-search"> -->
+
+		</header>
+		<a>
+			<div class="mui-input-row mui-search ">
+				<input type="search" class="mui-input-clear" placeholder="搜索球员球队、帖子、视频">
+			</div>
+		</a>
+
+		<!-- 栅格导航 -->
+		<div class="mui-row">
+			<div class="mui-col-xs-3 navTXT ">
+				<a href="bbs.html">
+					关注
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT">
+				<a href="bbsground.html" class="choose">
+					广场
+				</a>
+			</div>
+		</div>
+
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="context">
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/JRSicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">步行街主干道</div>
+									<br />
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/HTicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">湿乎乎的话题</div>
+									<span class="time"><img src="img/fireicon.png" >&nbsp;361.3w</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/LQicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">篮球场</div>
+									<span class="time"><img src="img/fireicon.png" >&nbsp;5.6w</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/LRWicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">路人王专区</div>
+									<span class="time"><img src="img/fireicon.png" >&nbsp;21.2w</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/HRicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">湖人专区</div>
+									<span class="time"><img src="img/fireicon.png" >&nbsp;39.7w</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/YSicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">勇士专区</div>
+									<span class="time"><img src="img/fireicon.png" >&nbsp;7.3w</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/ZQicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">足球场</div>
+									<span class="time"><img src="img/fireicon.png" >&nbsp;132.9.3w</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/LQXWicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">篮球新闻专区</div>
+									<span class="time"><img src="img/fireicon.png" >&nbsp;98.3w</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon "><img src="img/WZRYicon.jpg" width="40" height="40"></span>
+									<div class="mui-media-body">王者荣耀专区</div>
+									<span class="time"><img src="img/fireicon.png" >&nbsp;186.2w</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a href="./index.html" class="mui-tab-item " id="indexhome">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a href="./game.html" class="mui-tab-item" id="game">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">赛事</span>
+			</a>
+			<a href="./bbs.html" class="mui-tab-item  mui-active" id="bbs">
+				<span class="mui-icon mui-icon-paperplane"></span>
+				<span class="mui-tab-label">社区</span>
+			</a>
+			<a href="./setting.html" class="mui-tab-item " id="setting">
+				<span class="mui-icon mui-icon-settings"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>

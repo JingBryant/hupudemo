@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>	
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<img src="img/logo.png">
+		</header>
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<h2>&nbsp;&nbsp;&nbsp;修改密码</h2>
+				<div class="mui-content">
+					<form class="mui-input-group" id="login">
+						<div class="mui-input-row">
+							<label>原始密码:</label>
+							<input type="password"  placeholder="请输入原始密码" class="mui-input-password mui-input" >
+						</div>
+						<div class="mui-input-row">
+							<label>新密码:</label>
+							<input type="password" class="mui-input-password mui-input" placeholder="请输入新密码" id="newpwd">
+						</div>
+					</form>
+					<div class="mui-content-padded">
+						<button type="button" class="mui-btn mui-btn-primary" onclick="return false;">确认</button>
+					</div>
+					<div class="mui-content-padded oauth-area">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a href="./index.html" class="mui-tab-item " id="indexhome">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a href="./game.html" class="mui-tab-item" id="game">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">赛事</span>
+			</a>
+			<a href="./bbs.html" class="mui-tab-item" id="bbs">
+				<span class="mui-icon mui-icon-paperplane"></span>
+				<span class="mui-tab-label">社区</span>
+			</a>
+			<a href="./setting.html" class="mui-tab-item  mui-active" id="setting">
+				<span class="mui-icon mui-icon-settings"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+	mui(document.body).on('tap','.mui-btn',function(e){
+		mui("#login input").each(function(){
+			if(!this.value || this.value.trim() == ""){
+				var label = this.previousElementSibling;
+				mui.alert(label.innerText + "不允许为空");
+				check = false;
+				return false;
+			}else{
+				check = true;
+			}
+		});//校验通过
+		if(check){
+			var pwd=$("#newpwd").val();
+			window.sessionStorage.setItem('newpass',pwd);
+			mui.alert('密码修改成功，请重新登录',function(){
+				window.location.href="login.html?pwd="+pwd;
+			});
+		}
+	})
+</script>

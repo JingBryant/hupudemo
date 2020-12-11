@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+
+		.choose {
+			height: 1.875rem;
+			margin-top: 0.9375rem;
+			line-height: 1.875rem;
+			font-weight: bold;
+			font-size: 1.5625rem;
+		}
+
+		.time {
+			font-size: 0.625rem;
+			color: #bbb;
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<img src="img/logo.png">
+			<!-- <a class="mui-icon mui-icon-search"></a>
+			<input type="text"  placeholder="虎扑直播" class="mui-icon mui-icon-search"> -->
+
+		</header>
+		<a>
+			<div class="mui-input-row mui-search ">
+				<input type="search" class="mui-input-clear" placeholder="搜索球员球队、帖子、视频">
+			</div>
+		</a>
+
+		<!-- 栅格导航 -->
+		<div class="mui-row">
+			<div class="mui-col-xs-3 navTXT ">
+				<a href="bbs.html" class="choose">
+					关注
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT">
+				<a href="bbsground.html">
+					广场
+				</a>
+			</div>
+		</div>
+
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="context">
+					<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+						<li class="mui-table-view-cell">
+							<div class="">
+								<p class="mui-h5 mui-ellipsis"><b>步行街每日话题</b>&nbsp;&nbsp;&nbsp;非虚构Kevin</p>
+								<h4>日本采访对男生的收入要求，这...？</h4>
+								<span class="time">
+									<img src="img/PLicon.png">&nbsp;321&nbsp;&nbsp;&nbsp;
+									<img src="img/DZicon.png">&nbsp;107&nbsp;&nbsp;&nbsp;
+									<img src="img/DPicon.png">&nbsp;50
+								</span>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="">
+								<p class="mui-h5 mui-ellipsis"><b>湿乎乎的话题</b>&nbsp;&nbsp;&nbsp;Air J</p>
+								<h4>瓦妮萨：爱过雄鹰的凤凰怎么会看上燕雀？</h4>
+								<span class="time">
+									<img src="img/PLicon.png">&nbsp;477&nbsp;&nbsp;&nbsp;
+									<img src="img/DZicon.png">&nbsp;104&nbsp;&nbsp;&nbsp;
+									<img src="img/DPicon.png">&nbsp;50
+								</span>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="">
+								<p class="mui-h5 mui-ellipsis"><b>理性讨论区</b>&nbsp;&nbsp;&nbsp;AKADoubleQ</p>
+								<h4>25岁小伙娶了妈妈的闺蜜</h4>
+								<span class="time">
+									<img src="img/PLicon.png">&nbsp;70&nbsp;&nbsp;&nbsp;
+									<img src="img/DZicon.png">&nbsp;29&nbsp;&nbsp;&nbsp;
+									<img src="img/DPicon.png">&nbsp;20
+								</span>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="">
+								<p class="mui-h5 mui-ellipsis"><b>步行街每日话题</b>&nbsp;&nbsp;&nbsp;DWxteer</p>
+								<h4>[转]关于学习通考试你需要知道的一些东西</h4>
+								<span class="time">
+									<img src="img/PLicon.png">&nbsp;126&nbsp;&nbsp;&nbsp;
+									<img src="img/DZicon.png">&nbsp;131&nbsp;&nbsp;&nbsp;
+									<img src="img/DPicon.png">&nbsp;16
+								</span>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="">
+								<p class="mui-h5 mui-ellipsis"><b>路人王专区</b>&nbsp;&nbsp;&nbsp;TSF赛高</p>
+								<h4>兰州站比赛唐日辉抽筋，女友第一时间过来照料，我酸了</h4>
+								<span class="time">
+									<img src="img/PLicon.png">&nbsp;76&nbsp;&nbsp;&nbsp;
+									<img src="img/DZicon.png">&nbsp;73&nbsp;&nbsp;&nbsp;
+									<img src="img/DPicon.png">&nbsp;16
+								</span>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="">
+								<p class="mui-h5 mui-ellipsis"><b>步行街每日话题</b>&nbsp;&nbsp;&nbsp;内裤特大号哦</p>
+								<h4>职场中，一定要记住，永远不要把领导当知己，把同事当朋友</h4>
+								<span class="time">
+									<img src="img/PLicon.png">&nbsp;308&nbsp;&nbsp;&nbsp;
+									<img src="img/DZicon.png">&nbsp;83&nbsp;&nbsp;&nbsp;
+									<img src="img/DPicon.png">&nbsp;50
+								</span>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="">
+								<p class="mui-h5 mui-ellipsis"><b>娱乐圈</b>&nbsp;&nbsp;&nbsp;杭州城北徐公</p>
+								<h4>黑人陈建州和街球手吴悠早期视频</h4>
+								<span class="time">
+									<img src="img/PLicon.png">&nbsp;246&nbsp;&nbsp;&nbsp;
+									<img src="img/DZicon.png">&nbsp;107&nbsp;&nbsp;&nbsp;
+									<img src="img/DPicon.png">&nbsp;50
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a href="./index.html" class="mui-tab-item " id="indexhome">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a href="./game.html" class="mui-tab-item" id="game">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">赛事</span>
+			</a>
+			<a href="./bbs.html" class="mui-tab-item  mui-active" id="bbs">
+				<span class="mui-icon mui-icon-paperplane"></span>
+				<span class="mui-tab-label">社区</span>
+			</a>
+			<a href="./setting.html" class="mui-tab-item " id="setting">
+				<span class="mui-icon mui-icon-settings"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>

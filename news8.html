@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+
+		* {
+			padding: 0;
+			margin: 30
+		}
+
+		body {
+			font: 14px/24px "宋体";
+			color: #000
+		}
+
+		h2 {
+			font: normal 22px/35px "黑体";
+			color: #000;
+			text-align: center;
+		}
+
+		.one {
+			font-size: 12px;
+			text-align: center
+		}
+
+		.blue {
+			color: #00C
+		}
+
+		.gray {
+			color: #666
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<img src="img/logo.png">
+		</header>
+
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="context">
+					<h2><b>[卧谈会]这么多年来，你被哪句话毫不留情击碎过？</b></h2>
+					<p class="one gray">虎扑卧谈会&nbsp;&nbsp;&nbsp;&nbsp;<em>2020-06-09 22:14</em></p>
+					<hr />
+					<p>
+						[卧谈会]这么多年来，你被哪句话毫不留情击碎过？</p>
+					<img src="img/WTH.jpg" width="100%" height="300" align="middle" />
+					<p>此时情绪此时天，无事小神仙。</p>
+					<p>这么多年来，你被哪句话毫不留情击碎过？</p>
+					<br /><br /><br /><br /><br />
+					<p style="font-size: 1.25rem;color: #0000CC;"><b>这些回帖亮了</b></p>
+					<hr />
+					<p style="font-size: 0.9375rem;color:#000000"><b>贝由阿鹏:</b>我好像不那么喜欢你了</p>
+					<p style="font-size: 0.9375rem;color:#000000"><b>洛杉矶giao哥:</b>分手那一天，因为受不了前任天天生气，刚把她送回宿舍园区，虽然知道这是我们最后一次见面，但也没有什么伤感的，然后她给我发了一句“这次就惩罚你再也见不到我了”瞬间泪崩，哭了一路回到宿舍。</p>
+					<p style="font-size: 0.9375rem;color:#000000"><b>虹桥烈矢:</b>你对我越好，我会越反感</p>
+					<p style="font-size: 0.9375rem;color:#000000"><b>绿了宝强和乃亮 :</b>如果父母依旧辛苦，那我们长大的意义何在。</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>

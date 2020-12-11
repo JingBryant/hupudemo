@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+
+		* {
+			padding: 0;
+			margin: 30
+		}
+
+		body {
+			font: 14px/24px "宋体";
+			color: #000
+		}
+
+		h2 {
+			font: normal 22px/35px "黑体";
+			color: #000;
+			text-align: center;
+		}
+
+		.one {
+			font-size: 12px;
+			text-align: center
+		}
+
+		.blue {
+			color: #00C
+		}
+
+		.gray {
+			color: #666
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<img src="img/logo.png">
+		</header>
+
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="context">
+					<h2><b>NBA复赛球员入住酒店曝光！配套设施齐全，最重要信息：提供Taco</b></h2>
+					<p class="one gray">
+						天涯沦落人&nbsp;&nbsp;&nbsp;&nbsp;<em>2020-06-14</em></p>
+					<hr />
+					<p>近日关于欧文呼吁球员们反对NBA重启的消息看起来愈演愈烈，但联盟一直都稳坐中军帐，因为他们此前就说过不强制性要求球员们参赛，可以不随队参与重启，毕竟重启的决定是联盟和各队商议的结果，至于球员们是否参赛，并不是强制性的，只是他们不参赛的话肯定会在薪水上有一定的损失，所以联盟对于欧文等呼吁球员们反对重启的事情上没有过多的干预。</p>
+					<img src="img/news41.jpg" width="100%" height="300" align="middle" />
+					<p>现在NBA复赛之后球员们入住的酒店也已经曝光了，Disney’s Coronado Springs
+						Resort-迪士尼卡洛那朵泉度假酒店，复赛时球员们计划入住该酒店，除了能提供最佳吃住套餐之外，该酒店毗邻佛罗里达州体育中心，能够提供最好的入住条件和资源。</p>
+					<img src="img/news42.jpg" width="100%" height="300" align="middle" />
+					<p>除了非常配套设施齐全之外迪士尼卡洛那朵泉度假酒店还有提供Taco，我们都知道这对于詹姆斯来说是非常重要，如果说重启之后数周时间不能和家人团队是精神上的折磨，那么如果食物中没有Taco，那对于詹姆斯将会有直接的影响，因为詹姆斯生活中每周都是有“Taco
+						Tuesday”的，也就是吃墨西哥玉米卷饼。</p>
+					<img src="img/news43.jpg" width="100%" height="300" align="middle" />
+					<p>也正是因为这样的原因，所以不少球迷调侃詹姆斯之所以没有加入到好友欧文和安东尼的呼吁反对复赛的行列中，是因为重启之后酒店之内有提供Taco，所以詹姆斯不发愁，自然一心要复赛。</p>
+					<img src="img/news44.jpg" width="100%" height="300" align="middle" />
+					<img src="img/kobe4.jpg" width="100%" height="300" align="middle" />
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>

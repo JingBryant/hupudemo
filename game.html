@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+	
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+	
+		}
+	
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+		
+		.choose {
+			height: 1.875rem;
+			margin-top: 0.9375rem;
+			line-height: 1.875rem;
+			font-weight:bold;
+			border-bottom:1px solid #F00;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+	
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+		ul{
+			display: block;
+			list-style-type: disc;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0rem;
+			margin-inline-end: 0rem;
+			padding-inline-start: 0rem;
+		}
+		.news .list {
+		    display: flex;
+		    display: -webkit-flex;
+		    padding: 0.625rem 0.3125rem 0.3125rem;
+		    margin: 0 0.9375rem;
+		    border-bottom: 0.0625rem solid #ddd;
+		}
+		
+		.list-right-img .left {
+		    width: 60%;
+		    display: flex;
+		    display: -webkit-flex;
+		    flex-direction: column;
+		    justify-content: space-between;
+		}
+		
+		.list-right-img .left .title {
+		    font-weight: bold;
+		    height: 30%;
+		    font-size: 0.875rem;
+		}
+		
+		.list-right-img .left .content {
+		    font-size: 0.75rem;
+		    color: #888;
+		    margin: 0.3125rem 0;
+		    display: -webkit-box;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    -webkit-line-clamp: 3;
+		    -webkit-box-orient: vertical;
+		    line-height: 1rem;
+		}
+		
+		.list-right-img .left .time {
+		    font-size:0.625rem;
+		    color: #bbb;
+		}
+		
+		.list-right-img .right {
+		    width: 40%;
+		    margin-left: 0.625rem;
+		}
+		
+		.list-right-img .right img {
+		    width: 100%;
+		    height: 5rem;
+		}
+		
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<img src="img/logo.png">
+			<!-- <a class="mui-icon mui-icon-search"></a>
+			<input type="text"  placeholder="虎扑直播" class="mui-icon mui-icon-search"> -->
+		
+		</header>
+		<a>
+			<div class="mui-input-row mui-search ">
+				<input type="search" class="mui-input-clear" placeholder="搜索球员球队、帖子、视频">
+			</div>
+		</a>
+		
+		<!-- 栅格导航 -->
+		<div class="mui-row">
+			<div class="mui-col-xs-3 navTXT ">
+				<a href="game.html" class="choose">
+					新闻
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT">
+				<a href="gameplay.html">
+					赛程
+				</a>
+			</div>
+		</div>
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				
+				<div class="context">
+					<h5 style="background-color:#efeff4;font-size:1.5625rem;color: red;text-align: left;">&nbsp;&nbsp;&nbsp;<img src="img/hoticon.png">今日热门</h5>
+					<ul class="news">
+						<a href="news7.html">
+							<li class="list list-right-img">
+								<div class="left">
+									<div class="new">
+										<p class="content">莱昂纳德史上第一位没有MVP的历史前十？</p>
+									</div>
+									<span class="time"><img src="img/PLicon.png" >&nbsp;1714&nbsp;&nbsp;&nbsp;<img src="img/DPicon.png">&nbsp;50</span>
+								</div>
+								<div class="right">
+									<img src="img/LND1.jpg" alt="">
+								</div>
+							</li>
+						</a>
+						<a href="news8.html">
+							<li class="list list-right-img">
+								<div class="left">
+									<div class="new">
+										<p class="content">[卧谈会]这么多年来，你被哪句话毫不留情击碎过？</p>
+									</div>
+									<span class="time"><img src="img/PLicon.png" >&nbsp;1545&nbsp;&nbsp;&nbsp;<img src="img/DPicon.png">&nbsp;50</span>
+								</div>
+								<div class="right">
+									<img src="img/WTH.jpg" alt="">
+								</div>
+							</li>
+						</a>
+						<a href="news9.html">
+							<li class="list list-right-img">
+								<div class="left">
+									<div class="new">
+										<p class="content">[流言板]Shams：阿德托昆博和奥拉迪波是热火明年夏天的目标</p>
+									</div>
+									<span class="time"><img src="img/PLicon.png" >&nbsp;659&nbsp;&nbsp;&nbsp;<img src="img/DPicon.png">&nbsp;50</span>
+								</div>
+								<div class="right">
+									<img src="img/ZMG.jpg" alt="">
+								</div>
+							</li>
+						</a>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<nav class="mui-bar mui-bar-tab">
+			<a href="./index.html" class="mui-tab-item " id="indexhome">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a href="./game.html" class="mui-tab-item mui-active" id="game">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">赛事</span>
+			</a>
+			<a href="./bbs.html" class="mui-tab-item" id="bbs">
+				<span class="mui-icon mui-icon-paperplane"></span>
+				<span class="mui-tab-label">社区</span>
+			</a>
+			<a href="./setting.html" class="mui-tab-item" id="setting">
+				<span class="mui-icon mui-icon-settings"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>

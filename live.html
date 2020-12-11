@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.word p {
+			position: absolute;
+			left: 0;
+			bottom: 1.25rem;
+			width: 100%;
+			height: 1.875rem;
+			line-height: 1.875rem;
+			overflow: hidden;
+			font-size: 0.3125rem;
+			text-align: left;
+			color: #ffffff;
+			font-style: normal;
+
+		}
+
+		.choose {
+			height: 1.875rem;
+			background: #222779;
+			border-radius: 0.9375rem;
+			margin-top: 0.9375rem;
+			line-height: 1.875rem;
+			color: white;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+
+		ul {
+			display: block;
+			list-style-type: disc;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0rem;
+			margin-inline-end: 0rem;
+			padding-inline-start: 0rem;
+		}
+
+		.wordleft {
+			position: absolute;
+			left: 1.25rem;
+			bottom: 1.25rem;
+			width: 100%;
+			height: 1.875rem;
+			line-height: 1.875rem;
+			overflow: hidden;
+			font-size: 0.625rem;
+			text-align: left;
+			color: #ffffff;
+			font-style: normal;
+
+		}
+
+		.wordright {
+			position: absolute;
+			right: 0.9375rem;
+			bottom: 1.25rem;
+			width: 100%;
+			height: 1.875rem;
+			line-height: 1.875rem;
+			overflow: hidden;
+			font-size: 0.625rem;
+			text-align: right;
+			color: #ffffff;
+			font-style: normal;
+
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<img src="img/logo.png">
+			<!-- <a class="mui-icon mui-icon-search"></a>
+			<input type="text"  placeholder="虎扑直播" class="mui-icon mui-icon-search"> -->
+
+		</header>
+		<a>
+			<div class="mui-input-row mui-search ">
+				<input type="search" class="mui-input-clear" placeholder="搜索球员球队、帖子、视频">
+			</div>
+		</a>
+
+		<!-- 栅格导航 -->
+		<div class="mui-row">
+			<div class="mui-col-xs-3 navTXT ">
+				<a href="index.html">
+					综合
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT choose">
+				<a href="live.html">
+					直播
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT ">
+				<a href="basketball.html">
+					篮球
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT">
+				<a href="football.html">足球</a>
+			</div>
+
+		</div>
+		<!-- 内容区域 -->
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="mui-content" style="background-color:#fff">
+					<h5 style="background-color:#efeff4;font-size:1.5625rem;color: red;text-align: left;">&nbsp;&nbsp;&nbsp;<img src="img/liveicon.png">&nbsp;&nbsp;推荐</h5>
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-media mui-col-xs-6 ">
+							<a href="http://www.liangle.com/passerbyking/game/before/1091">
+								<img class="mui-media-object" src="img/LRW-DaLian.jpg">
+								<p class="wordleft">路人王</p>
+								<p class="wordright"><img src="img/headicon.png">231224</p>
+								<div class="mui-media-body">[直播] 路人王大连站</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="https://www.douyu.com/5977737">
+								<img class="mui-media-object" src="img/nba2k2.png">
+								<p class="wordleft">ESC丶俊王爷</p>
+								<p class="wordright"><img src="img/headicon.png">121016</p>
+								<div class="mui-media-body">[直播] NBA2K Online ESC丶俊王爷直播间</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="https://www.huya.com/688"><img class="mui-media-object" src="img/WZRY.png">
+								<p class="wordleft">张大仙</p>
+								<p class="wordright"><img src="img/headicon.png">4746533</p>
+								<div class="mui-media-body">[直播] 王者荣耀 张大仙直播间</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="https://www.douyu.com/101">
+								<img class="mui-media-object" src="img/YXLM.png">
+								<p class="wordleft">PDD</p>
+								<p class="wordright"><img src="img/headicon.png">8223124</p>
+								<div class="mui-media-body">[直播] 英雄联盟 PDD直播间</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="#"><img class="mui-media-object" src="img/CSGO.png">
+								<p class="wordleft">Big茄子</p>
+								<p class="wordright"><img src="img/headicon.png">2263124</p>
+								<div class="mui-media-body">[直播] CSGO Big茄子直播间</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="#">
+								<img class="mui-media-object" src="img/DNF.png">
+								<p class="wordleft">旭旭宝宝</p>
+								<p class="wordright"><img src="img/headicon.png">9895920</p>
+								<div class="mui-media-body">[直播] DNF 旭旭宝宝直播间</div>
+							</a></li>
+					</ul>
+				</div>
+				<div class="mui-content" style="background-color:#fff">
+					<h5 style="background-color:#efeff4;font-size:1.5625rem;color: red;text-align: left;">&nbsp;&nbsp;&nbsp;<img src="img/backicon.png">&nbsp;&nbsp;精彩回放</h5>
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="https://mp.weixin.qq.com/s/evH9nKyLptraLa4kYUcvyw?e_code=490645&idataid=277350"><img class="mui-media-object" src="img/live1.jpg">
+								<p class="wordleft">NBA2K2</p>
+								<div class="mui-media-body">[资讯] 街头上分技巧</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="https://www.douyu.com/topic/KPLmatch?rid=1863767">
+								<img class="mui-media-object" src="img/live2.jpg">
+								<p class="wordleft">KPL</p>
+								<div class="mui-media-body">[回放] KPL2020春季赛总决赛</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=623865"><img class="mui-media-object" src="img/live3.jpg">
+								<p class="wordleft">梦飞</p>
+								<div class="mui-media-body">[精彩视频] 大闹峡谷三人组</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=623170">
+								<img class="mui-media-object" src="img/live4.jpg">
+								<p class="wordleft">梦泪</p>
+								<div class="mui-media-body">[精彩视频] 给我个小明</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6 ">
+							<a href="http://www.liangle.com/video/k1wxwo6o41o">
+								<img class="mui-media-object" src="img/LRW-HeFei.jpg">
+								<p class="wordleft">路人王</p>
+								<div class="mui-media-body">[回放] 路人王合肥站</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="http://www.liangle.com/video/646nx9lgqvn">
+								<img class="mui-media-object" src="img/LRW-LanZhou.jpg">
+								<p class="wordleft">路人王</p>
+								<div class="mui-media-body">[回放] 路人王兰州站</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="http://www.liangle.com/video/vq9poo0jv94"><img class="mui-media-object" src="img/LRW-NanNing.jpg">
+								<p class="wordleft">路人王</p>
+								<div class="mui-media-body">[回放] 路人王南宁站</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="http://www.liangle.com/video/24z3xl8lgqq">
+								<img class="mui-media-object" src="img/LRW-QingDao.jpg">
+								<p class="wordleft">路人王</p>
+								<div class="mui-media-body">[回放] 路人王青岛站</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="http://www.liangle.com/video/m7jvxov8jvv"><img class="mui-media-object" src="img/LRW-ShiJiaZhuang.jpg">
+								<p class="wordleft">路人王</p>
+								<div class="mui-media-body">[回放] 路人王石家庄站</div>
+							</a></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="http://www.liangle.com/video/jvo2vk19nxz">
+								<img class="mui-media-object" src="img/LRW-XiNing.jpg">
+								<p class="wordleft">路人王</p>
+								<div class="mui-media-body">[回放] 路人王西宁站</div>
+							</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a href="./index.html" class="mui-tab-item mui-active" id="indexhome">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a href="./game.html" class="mui-tab-item" id="game">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">赛事</span>
+			</a>
+			<a href="./bbs.html" class="mui-tab-item" id="bbs">
+				<span class="mui-icon mui-icon-paperplane"></span>
+				<span class="mui-tab-label">社区</span>
+			</a>
+			<a href="./setting.html" class="mui-tab-item" id="setting">
+				<span class="mui-icon mui-icon-settings"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>

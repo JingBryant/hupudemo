@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style type="text/css">
+		.head {
+			height: 3.75rem;
+			position: static;
+			/* 不定位  静态定位 */
+		}
+
+		.head img {
+			width: 4.6875rem;
+			height: 3.375rem;
+			display: block;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
+
+
+		.navTXT {
+			text-align: center;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+
+		.word p{
+			position: absolute;
+			left: 0;
+			bottom: 1.25rem;
+			width: 100%;
+			height: 1.875rem;
+			line-height: 1.875rem;
+			overflow: hidden;
+			font-size: 1.25rem;
+			text-align: center;
+			color:#ffffff;font-style: normal;
+			
+		}
+		.choose {
+			height: 1.875rem;
+			background: #222779;
+			border-radius: 0.9375rem;
+			margin-top: 0.9375rem;
+			line-height: 1.875rem;
+			color: white;
+		}
+
+		.mui-scroll-wrapper {
+			position: static;
+		}
+
+		.mui-slider-indicator {
+			z-index: 10;
+			position：static
+		}
+		ul{
+			display: block;
+			list-style-type: disc;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0rem;
+			margin-inline-end: 0rem;
+			padding-inline-start: 0rem;
+		}
+		.news .list {
+		    display: flex;
+		    display: -webkit-flex;
+		    padding: 0.625rem 0.3125rem 0.3125rem;
+		    margin: 0 0.9375rem;
+		    border-bottom: 0.0625rem solid #ddd;
+		}
+		
+		.list-right-img .left {
+		    width: 60%;
+		    display: flex;
+		    display: -webkit-flex;
+		    flex-direction: column;
+		    justify-content: space-between;
+		}
+		
+		.list-right-img .left .title {
+		    font-weight: bold;
+		    height: 30%;
+		    font-size: 0.875rem;
+		}
+		
+		.list-right-img .left .content {
+		    font-size: 0.75rem;
+		    color: #888;
+		    margin: 0.3125rem 0;
+		    display: -webkit-box;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    -webkit-line-clamp: 3;
+		    -webkit-box-orient: vertical;
+		    line-height: 1rem;
+		}
+		
+		.list-right-img .left .time {
+		    font-size:0.625rem;
+		    color: #bbb;
+		}
+		
+		.list-right-img .right {
+		    width: 40%;
+		    margin-left: 0.625rem;
+		}
+		
+		.list-right-img .right img {
+		    width: 100%;
+		    height: 5rem;
+		}
+
+		.mui-scroll {
+			padding-bottom: 3.125rem;
+		}
+	</style>
+	<body>
+		<!-- 头部logo -->
+		<header class="mui-bar mui-bar-nav head">
+			<img src="img/logo.png">
+			<!-- <a class="mui-icon mui-icon-search"></a>
+			<input type="text"  placeholder="虎扑直播" class="mui-icon mui-icon-search"> -->
+
+		</header>
+		<a>
+			<div class="mui-input-row mui-search ">
+				<input type="search" class="mui-input-clear" placeholder="搜索球员球队、帖子、视频">
+			</div>
+		</a>
+
+		<!-- 栅格导航 -->
+		<div class="mui-row">
+			<div class="mui-col-xs-3 navTXT">
+				<a href="index.html">
+					综合
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT">
+				<a href="live.html">
+					直播
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT  choose">
+				<a href="basketball.html">
+					篮球
+				</a>
+			</div>
+			<div class="mui-col-xs-3 navTXT">
+				<a href="football.html">足球</a>
+			</div>
+
+
+		</div>
+		<!-- 内容区域 -->
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="context">
+					<ul class="news">
+						<a href="kobe.html">
+							<li class="list list-right-img">
+								<div class="left">
+									<div class="new">
+										<p class="content">科比退役四周年回忆生涯世上再无黑曼巴</p>
+									</div>
+									<span class="time">夏沫小屋   2020-04-29</span>
+								</div>
+								<div class="right">
+									<img src="img/kobe1.jpg" alt="">
+								</div>
+							</li>
+						</a>
+						<a href="curry.html">
+							<li class="list list-right-img">
+								<div class="left">
+									<div class="new">
+										<p class="content">库里一到总决赛就不行？别印象流！5年总决赛，他的数据是这样的</p>
+									</div>
+									<span class="time">野球帝 2020-06-11</span>
+								</div>
+								<div class="right">
+									<img src="img/curry.jpg" alt="">
+								</div>
+							</li>
+						</a>
+						<a href="rose.html">
+							<li class="list list-right-img">
+								<div class="left">
+									<div class="new">
+										<p class="content">NBA催泪一战：罗斯爆砍50分痛哭不止，那一夜多少人陪他哭泣</p>
+									</div>
+									<span class="time">末位评论 2020-05-10</span>
+								</div>
+								<div class="right">
+									<img src="img/rose.jpg" alt="">
+								</div>
+							</li>
+						</a>
+						<a href="news1.html">
+							<li class="list list-right-img">
+								<div class="left">
+									<div class="new">
+										<p class="content">34岁霍华德发表声明公开力挺欧文罢赛，这是要和詹姆斯对着干？</p>
+									</div>
+									<span class="time">追球者   4评  30分钟前</span>
+								</div>
+								<div class="right">
+									<img src="img/news14.jpg" alt="">
+								</div>
+							</li>
+						</a>
+						<a href="news4.html">
+							<li class="list list-right-img">
+								<div class="left">
+									<div class="new">
+										<p class="content">NBA复赛球员入住酒店曝光！配套设施齐全，最重要信息：提供Taco</p>
+									</div>
+									<span class="time">天涯沦落人   2020-06-14</span>
+								</div>
+								<div class="right">
+									<img src="img/news41.jpg" alt="">
+								</div>
+							</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a href="./index.html" class="mui-tab-item mui-active" id="indexhome">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a href="./game.html" class="mui-tab-item" id="game">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">赛事</span>
+			</a>
+			<a href="./bbs.html" class="mui-tab-item" id="bbs">
+				<span class="mui-icon mui-icon-paperplane"></span>
+				<span class="mui-tab-label">社区</span>
+			</a>
+			<a href="./setting.html" class="mui-tab-item" id="setting">
+				<span class="mui-icon mui-icon-settings"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+	</body>
+</html>
+<script type="text/javascript">
+	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+	});
+</script>
